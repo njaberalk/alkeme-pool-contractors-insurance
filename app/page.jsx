@@ -13,6 +13,9 @@ export const metadata = {
 export default function HomePage() {
   return (
     <>
+      <meta name="author" content="ALKEME Insurance Services" />
+      <meta property="article:published_time" content="2025-06-01T00:00:00Z" />
+      <meta property="article:modified_time" content="2026-04-01T00:00:00Z" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -43,6 +46,8 @@ export default function HomePage() {
               'Physical Damage Coverage',
               'Transportation Insurance',
             ],
+            citation: { '@type': 'CreativeWork', name: 'Insurance Information Institute', url: 'https://www.iii.org' },
+            about: { '@type': 'Thing', name: 'Commercial Trucking Insurance' },
           }),
         }}
       />
