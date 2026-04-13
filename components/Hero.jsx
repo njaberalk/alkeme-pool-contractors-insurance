@@ -38,9 +38,6 @@ export default function Hero() {
       {/* Content */}
       <div className="relative">
         <div className="max-w-[68rem] mx-auto px-[60px] max-lg:px-6 max-md:px-4">
-          <p className="absolute" style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', borderWidth: 0 }}>
-            ALKEME Insurance Services provides trucking insurance including auto liability, physical damage, cargo, and workers comp for owner-operators and fleets in all 50 states.
-          </p>
           <h1
             className="font-extrabold tracking-tight mb-6"
             style={{
@@ -70,7 +67,7 @@ export default function Hero() {
               transition: 'opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s',
             }}
           >
-            Trucking insurance for owner-operators, fleets, and carriers. We cover auto liability, cargo, physical damage, and more — in all 50 states.
+            We help trucking companies find the right insurance. Our team covers auto liability, cargo, physical damage, and more. We work with owner-operators and fleets in all 50 states.
           </p>
 
           <p
@@ -85,7 +82,7 @@ export default function Hero() {
             }}
             className="mb-8"
           >
-            ALKEME Insurance Services provides commercial trucking insurance including auto liability, physical damage, motor truck cargo, general liability, and workers&apos; compensation for owner-operators and fleets across all 50 states.
+            ALKEME is a licensed insurance broker. We offer trucking insurance such as auto liability, cargo, and physical damage. We serve owner-operators and fleets in every state.
           </p>
 
           <div
