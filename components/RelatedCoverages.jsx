@@ -2,22 +2,21 @@
 import Link from 'next/link';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
-// Basic coverage metadata for cross-linking
 const allCoverages = {
-  'auto-liability': { title: 'Primary Auto Liability', desc: 'Liability protection for at-fault accidents' },
-  'physical-damage': { title: 'Physical Damage', desc: 'Covers repair or replacement of your vehicles' },
-  'motor-truck-cargo': { title: 'Motor Truck Cargo', desc: 'Protects goods in transit' },
-  'general-liability': { title: 'General Liability', desc: 'Third-party claims outside vehicle operation' },
-  'non-trucking-liability': { title: 'Non-Trucking Liability', desc: 'Coverage for personal use of truck' },
-  'trailer-interchange': { title: 'Trailer Interchange', desc: 'Covers trailers under interchange agreements' },
-  'workers-compensation': { title: 'Workers\' Compensation', desc: 'Employee injury wage and medical benefits' },
-  'umbrella-excess-liability': { title: 'Umbrella / Excess', desc: 'Additional liability protection layer' },
-  'occupational-accident': { title: 'Occupational Accident', desc: 'Coverage for independent contractors' },
+  'general-liability': { title: 'General Liability', desc: 'Third-party bodily injury and property damage' },
+  'workers-compensation': { title: 'Workers\' Compensation', desc: 'Employee injury and occupational illness coverage' },
+  'commercial-auto': { title: 'Commercial Auto', desc: 'Service vehicles, trucks, and trailers' },
+  'commercial-property': { title: 'Commercial Property', desc: 'Office, warehouse, showrooms, and equipment' },
+  'inland-marine': { title: 'Inland Marine', desc: 'Tools and equipment at job sites and in transit' },
+  'professional-liability': { title: 'Professional Liability', desc: 'Design errors and consulting mistakes' },
+  'umbrella-excess': { title: 'Umbrella / Excess', desc: 'Additional liability protection layer' },
+  'completed-operations': { title: 'Completed Operations', desc: 'Post-completion claims and defect liability' },
+  'installation-floater': { title: 'Installation Floater', desc: 'Materials during installation before handover' },
+  'pollution-liability': { title: 'Pollution Liability', desc: 'Chemical spills and environmental cleanup' },
 };
 
 export default function RelatedCoverages({ slugs, title = 'Related Coverage' }) {
   const ref = useScrollAnimation();
-
   return (
     <div ref={ref} className="bg-stone fade-in-view" style={{ padding: '5rem 0' }}>
       <div className="max-w-[68rem] mx-auto px-[60px] max-lg:px-6 max-md:px-4">

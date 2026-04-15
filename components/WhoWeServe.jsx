@@ -3,16 +3,16 @@ import Link from 'next/link';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const segments = [
-  { name: 'Owner-Operators', slug: 'owner-operators', desc: 'Single-truck operations and independent drivers' },
-  { name: 'Small Fleets', slug: 'small-fleets', desc: 'Growing operations with 2–15 power units' },
-  { name: 'Large Fleets', slug: 'large-fleets', desc: 'Enterprise carriers with complex risk profiles' },
-  { name: 'Hot Shot Trucking', slug: 'hot-shot-trucking', desc: 'Time-critical freight and expedited loads' },
-  { name: 'LTL / Last Mile', slug: 'ltl-last-mile', desc: 'Less-than-truckload and final delivery operations' },
-  { name: 'Intermodal', slug: 'intermodal', desc: 'Container and multi-mode transportation' },
-  { name: 'Refrigerated', slug: 'refrigerated', desc: 'Temperature-controlled cargo and reefer units' },
-  { name: 'Flatbed', slug: 'flatbed', desc: 'Open-deck and specialized heavy haul carriers' },
-  { name: 'Hazmat', slug: 'hazmat', desc: 'Hazardous materials transportation specialists' },
-  { name: 'Car Haulers', slug: 'car-haulers', desc: 'Auto transport and vehicle logistics carriers' },
+  { name: 'Pool Builders', slug: 'pool-builders', desc: 'New pool construction companies' },
+  { name: 'Hot Tub Installers', slug: 'hot-tub-installers', desc: 'Spa and hot tub installation' },
+  { name: 'Pool Service & Maintenance', slug: 'pool-service-maintenance', desc: 'Ongoing pool care and repairs' },
+  { name: 'Pool Remodeling', slug: 'pool-remodeling', desc: 'Renovation and resurfacing' },
+  { name: 'Commercial Pools', slug: 'commercial-pools', desc: 'Hotels, HOAs, and municipal pools' },
+  { name: 'Water Feature Designers', slug: 'water-feature-designers', desc: 'Fountains, waterfalls, and ponds' },
+  { name: 'Pool Equipment Suppliers', slug: 'pool-equipment-suppliers', desc: 'Distribution and supply companies' },
+  { name: 'Spa Contractors', slug: 'spa-contractors', desc: 'Day spas and wellness builds' },
+  { name: 'Pool Demolition', slug: 'pool-demolition', desc: 'Pool removal and fill services' },
+  { name: 'Aquatic Facilities', slug: 'aquatic-facilities', desc: 'Water parks and swim centers' },
 ];
 
 export default function WhoWeServe() {
@@ -24,15 +24,15 @@ export default function WhoWeServe() {
       <div className="max-w-[68rem] mx-auto px-[60px] max-lg:px-6 max-md:px-4">
         <div ref={headerRef} className="text-center max-w-3xl mx-auto mb-16 fade-in-view">
           <p className="text-blue uppercase tracking-[0.15em] font-bold mb-4" style={{ fontSize: '0.85rem' }}>Industries Served</p>
-          <h2 className="text-brand font-bold leading-[1.3] tracking-tight mb-5" style={{ fontSize: 'clamp(2.2rem, 4vw, 2.6rem)' }}>Coverage for Every Type of Operation</h2>
-          <p className="text-brand" style={{ fontSize: '1rem', lineHeight: '1.6' }}>We serve trucking and transportation businesses across all segments — from single-truck owner-operators to large enterprise fleets.</p>
+          <h2 className="text-brand font-bold leading-[1.3] tracking-tight mb-5" style={{ fontSize: 'clamp(2.2rem, 4vw, 2.6rem)' }}>Coverage for Every Type of Pool & Hot Tub Operation</h2>
+          <p className="text-brand" style={{ fontSize: '1rem', lineHeight: '1.6' }}>We serve pool and spa contractors across all segments — from one-person service routes to large commercial pool builders with multi-million dollar projects.</p>
         </div>
         <div ref={gridRef} className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 stagger-children">
           {segments.map((seg) => (
             <Link key={seg.name} href={`/industries/${seg.slug}/`} className="group border-2 border-ash rounded-[2rem] p-6 text-center bg-white/40 no-underline block" style={{ transition: 'all 0.24s' }}>
               <div className="w-12 h-12 bg-brand rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gold" style={{ transition: 'all 0.24s' }}>
                 <svg className="w-6 h-6 text-stone group-hover:text-brand" style={{ transition: 'color 0.24s' }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                 </svg>
               </div>
               <h3 className="text-brand font-bold mb-1" style={{ fontSize: '0.9rem' }}>{seg.name}</h3>

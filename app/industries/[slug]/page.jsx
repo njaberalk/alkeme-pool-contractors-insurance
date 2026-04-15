@@ -12,15 +12,8 @@ export async function generateMetadata({ params }) {
   return {
     title: industry.metaTitle,
     description: industry.metaDescription,
-    alternates: {
-      canonical: `https://alkemeins.com/trucking/industries/${industry.slug}/`,
-    },
-    openGraph: {
-      title: industry.metaTitle,
-      description: industry.metaDescription,
-      url: `https://alkemeins.com/trucking/industries/${industry.slug}/`,
-      type: 'website',
-    },
+    alternates: { canonical: `https://alkemeins.com/pool-contractors/industries/${industry.slug}/` },
+    openGraph: { title: industry.metaTitle, description: industry.metaDescription, url: `https://alkemeins.com/pool-contractors/industries/${industry.slug}/`, type: 'website' },
   };
 }
 
@@ -30,16 +23,11 @@ export default async function IndustryPage({ params }) {
   if (!industry) return <div>Industry not found</div>;
 
   const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: `${industry.title} Insurance`,
-    provider: { '@type': 'InsuranceAgency', name: 'ALKEME Insurance Services', url: 'https://alkemeins.com/trucking' },
-    description: industry.metaDescription,
-    url: `https://alkemeins.com/trucking/industries/${industry.slug}/`,
-    serviceType: 'Commercial Trucking Insurance',
-    areaServed: { '@type': 'Country', name: 'United States' },
-    citation: { '@type': 'CreativeWork', name: 'Insurance Information Institute', url: 'https://www.iii.org' },
-    about: { '@type': 'Thing', name: industry.title },
+    '@context': 'https://schema.org', '@type': 'Service',
+    name: `${industry.title} Insurance`, provider: { '@type': 'InsuranceAgency', name: 'ALKEME Insurance Services', url: 'https://alkemeins.com/pool-contractors' },
+    description: industry.metaDescription, url: `https://alkemeins.com/pool-contractors/industries/${industry.slug}/`,
+    serviceType: 'Pool Contractor Insurance', areaServed: { '@type': 'Country', name: 'United States' },
+    citation: { '@type': 'CreativeWork', name: 'Insurance Information Institute', url: 'https://www.iii.org' }, about: { '@type': 'Thing', name: industry.title },
   };
 
   return (
@@ -49,15 +37,7 @@ export default async function IndustryPage({ params }) {
       <meta property="article:modified_time" content="2026-04-01T00:00:00Z" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {industry.faqs?.length > 0 && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'FAQPage',
-          mainEntity: industry.faqs.map((faq) => ({
-            '@type': 'Question',
-            name: faq.q,
-            acceptedAnswer: { '@type': 'Answer', text: faq.a },
-          })),
-        }) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: industry.faqs.map((faq) => ({ '@type': 'Question', name: faq.q, acceptedAnswer: { '@type': 'Answer', text: faq.a } })) }) }} />
       )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: industry.title, datePublished: '2025-06-01', dateModified: '2026-04-01', author: { '@type': 'Organization', name: 'ALKEME Insurance Services', url: 'https://alkemeins.com' }, publisher: { '@type': 'Organization', name: 'ALKEME Insurance Services', url: 'https://alkemeins.com' } }) }} />
       <IndustryPageContent industry={industry} />

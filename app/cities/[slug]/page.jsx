@@ -12,15 +12,8 @@ export async function generateMetadata({ params }) {
   return {
     title: city.metaTitle,
     description: city.metaDescription,
-    alternates: {
-      canonical: `https://alkemeins.com/trucking/cities/${city.slug}/`,
-    },
-    openGraph: {
-      title: `${city.metaTitle} | ALKEME Insurance Services`,
-      description: city.metaDescription,
-      url: `https://alkemeins.com/trucking/cities/${city.slug}/`,
-      type: 'website',
-    },
+    alternates: { canonical: `https://alkemeins.com/pool-contractors/cities/${city.slug}/` },
+    openGraph: { title: `${city.metaTitle} | ALKEME Insurance Services`, description: city.metaDescription, url: `https://alkemeins.com/pool-contractors/cities/${city.slug}/`, type: 'website' },
   };
 }
 
@@ -30,23 +23,8 @@ export default async function CityPage({ params }) {
   if (!city) return <div>City not found</div>;
 
   const jsonLd = [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'Service',
-      name: `Trucking Insurance in ${city.city}, ${city.abbreviation}`,
-      provider: { '@type': 'InsuranceAgency', name: 'ALKEME Insurance Services', url: 'https://alkemeins.com' },
-      description: city.metaDescription,
-      url: `https://alkemeins.com/trucking/cities/${city.slug}/`,
-      serviceType: 'Commercial Trucking Insurance',
-      areaServed: { '@type': 'City', name: city.city, containedIn: { '@type': 'State', name: city.state } },
-      citation: { '@type': 'CreativeWork', name: 'Insurance Information Institute', url: 'https://www.iii.org' },
-      about: { '@type': 'Thing', name: city.city },
-    },
-    ...(city.faqs?.length ? [{
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: city.faqs.map((faq) => ({ '@type': 'Question', name: faq.q, acceptedAnswer: { '@type': 'Answer', text: faq.a } })),
-    }] : []),
+    { '@context': 'https://schema.org', '@type': 'Service', name: `Pool Contractor Insurance in ${city.city}, ${city.abbreviation}`, provider: { '@type': 'InsuranceAgency', name: 'ALKEME Insurance Services', url: 'https://alkemeins.com' }, description: city.metaDescription, url: `https://alkemeins.com/pool-contractors/cities/${city.slug}/`, serviceType: 'Pool Contractor Insurance', areaServed: { '@type': 'City', name: city.city, containedIn: { '@type': 'State', name: city.state } }, citation: { '@type': 'CreativeWork', name: 'Insurance Information Institute', url: 'https://www.iii.org' }, about: { '@type': 'Thing', name: city.city } },
+    ...(city.faqs?.length ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: city.faqs.map((faq) => ({ '@type': 'Question', name: faq.q, acceptedAnswer: { '@type': 'Answer', text: faq.a } })) }] : []),
   ];
 
   return (
@@ -54,9 +32,7 @@ export default async function CityPage({ params }) {
       <meta name="author" content="ALKEME Insurance Services" />
       <meta property="article:published_time" content="2025-06-01T00:00:00Z" />
       <meta property="article:modified_time" content="2026-04-01T00:00:00Z" />
-      {jsonLd.map((ld, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
-      ))}
+      {jsonLd.map((ld, i) => (<script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />))}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: city.city, datePublished: '2025-06-01', dateModified: '2026-04-01', author: { '@type': 'Organization', name: 'ALKEME Insurance Services', url: 'https://alkemeins.com' }, publisher: { '@type': 'Organization', name: 'ALKEME Insurance Services', url: 'https://alkemeins.com' } }) }} />
       <CityPageContent city={city} />
     </>

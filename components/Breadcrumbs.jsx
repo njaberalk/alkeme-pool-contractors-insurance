@@ -8,7 +8,7 @@ export default function Breadcrumbs({ items }) {
       '@type': 'ListItem',
       position: i + 1,
       name: item.label,
-      item: item.href ? `https://alkemeins.com/trucking${item.href}` : undefined,
+      item: item.href ? `https://alkemeins.com/pool-contractors${item.href}` : undefined,
     })),
   };
 

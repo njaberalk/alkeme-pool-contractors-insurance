@@ -2,21 +2,9 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const cards = [
-  {
-    title: 'Transportation Industry Expertise',
-    description: 'Deep understanding of the risks facing trucking operations. Our specialists know the regulatory landscape, market conditions, and coverage requirements unique to commercial transportation.',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    title: 'Tailored Coverage Strategies',
-    description: 'No two operations are the same. We design coverage programs that align with your fleet size, cargo type, operating radius, and risk profile — not a one-size-fits-all policy.',
-    image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    title: 'Responsive Service & Claims Support',
-    description: 'When an incident occurs, every hour matters. Our team provides direct access to experienced claims advocates who understand trucking-specific challenges and move quickly on your behalf.',
-    image: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=600&q=80',
-  },
+  { title: 'Pool & Aquatic Industry Expertise', description: 'Deep understanding of the risks facing pool builders, service companies, and hot tub installers. Our specialists know drowning liability, completed operations exposure, and chemical handling requirements unique to aquatic contractors.', image: 'https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?auto=format&fit=crop&w=600&q=80' },
+  { title: 'Tailored Coverage Programs', description: 'No two pool contractors face the same risks. We design coverage programs that align with your project types, service territory, subcontractor use, and client base — not a generic contractor policy.', image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80' },
+  { title: 'Responsive Service & Claims Support', description: 'When a claim occurs on a pool job site, every hour matters. Our team provides direct access to experienced claims advocates who understand pool contractor challenges and act quickly on your behalf.', image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80' },
 ];
 
 export default function ValueProposition() {
@@ -26,42 +14,20 @@ export default function ValueProposition() {
   return (
     <section className="bg-stone" style={{ padding: '7rem 0' }}>
       <div className="max-w-[68rem] mx-auto px-[60px] max-lg:px-6 max-md:px-4">
-        {/* Section Header */}
         <div ref={headerRef} className="text-center max-w-3xl mx-auto mb-16 fade-in-view">
-          <p className="text-blue uppercase tracking-[0.15em] font-bold mb-4" style={{ fontSize: '0.85rem' }}>
-            Why We&apos;re Different
-          </p>
-          <h2 className="text-brand font-bold leading-[1.3] tracking-tight mb-5" style={{ fontSize: 'clamp(2.2rem, 4vw, 2.6rem)' }}>
-            Specialized Protection for the Road Ahead
-          </h2>
-          <p className="text-brand" style={{ fontSize: '1rem', lineHeight: '1.6' }}>
-            We combine deep industry knowledge with a consultative approach to deliver insurance programs that truly protect your operation.
-          </p>
+          <p className="text-blue uppercase tracking-[0.15em] font-bold mb-4" style={{ fontSize: '0.85rem' }}>Why We&apos;re Different</p>
+          <h2 className="text-brand font-bold leading-[1.3] tracking-tight mb-5" style={{ fontSize: 'clamp(2.2rem, 4vw, 2.6rem)' }}>Specialized Protection for Pool & Hot Tub Contractors</h2>
+          <p className="text-brand" style={{ fontSize: '1rem', lineHeight: '1.6' }}>We combine deep industry knowledge with a consultative approach to deliver insurance programs that truly protect your pool contracting business.</p>
         </div>
-
-        {/* Cards */}
         <div ref={cardsRef} className="grid md:grid-cols-3 gap-6 stagger-children">
           {cards.map((card) => (
-            <div
-              key={card.title}
-              className="relative overflow-hidden rounded-[2rem] group cursor-pointer"
-              style={{ height: '13rem' }}
-            >
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                style={{ backgroundImage: `url('${card.image}')`, filter: 'grayscale(100%)' }}
-              />
+            <div key={card.title} className="relative overflow-hidden rounded-[2rem] group cursor-pointer" style={{ height: '13rem' }}>
+              <div className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style={{ backgroundImage: `url('${card.image}')`, filter: 'grayscale(100%)' }} />
               <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.6) 100%)' }} />
               <div className="absolute inset-0 pointer-events-none" style={{ opacity: 0.08, backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`, backgroundRepeat: 'repeat', backgroundSize: '128px 128px' }} />
-              {/* Hover overlay - matches alkeme insurance_tab-box-overlay */}
-              <div
-                className="absolute inset-0 bg-brand opacity-0 group-hover:opacity-70"
-                style={{ transition: 'opacity 0.5s ease' }}
-              />
+              <div className="absolute inset-0 bg-brand opacity-0 group-hover:opacity-70" style={{ transition: 'opacity 0.5s ease' }} />
               <div className="absolute inset-0 flex items-end justify-start" style={{ padding: '1.8rem' }}>
-                <h3 className="text-stone font-bold relative z-10" style={{ fontSize: '1.25rem', lineHeight: '1.3' }}>
-                  {card.title}
-                </h3>
+                <h3 className="text-stone font-bold relative z-10" style={{ fontSize: '1.25rem', lineHeight: '1.3' }}>{card.title}</h3>
               </div>
             </div>
           ))}

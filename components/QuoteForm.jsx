@@ -8,44 +8,24 @@ export default function QuoteForm() {
     <section id="contact" className="bg-blue-dark" style={{ padding: '6rem 0' }}>
       <div ref={ref} className="max-w-[68rem] mx-auto px-[60px] max-lg:px-6 max-md:px-4 fade-in-view">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left - Copy */}
           <div>
-            <p className="text-blue uppercase tracking-[0.15em] font-bold mb-4" style={{ fontSize: '0.85rem' }}>
-              Get Covered
-            </p>
-            <h2 className="text-stone font-bold leading-[1.3] tracking-tight mb-5" style={{ fontSize: 'clamp(2.2rem, 4vw, 2.6rem)' }}>
-              Share a Few Details and Let&apos;s Find the Right Coverage
-            </h2>
-            <p className="text-cream font-light mb-8" style={{ lineHeight: '22px', maxWidth: '500px' }}>
-              Tell us about your operation and our transportation insurance specialists will reach out with tailored coverage options. No obligation — just expert guidance from a team that understands trucking.
-            </p>
-
-            <a
-              href="https://alkemeins.com/form"
-              className="inline-flex items-center justify-center border-2 border-gold bg-gold text-brand text-center uppercase tracking-[0.16em] rounded-[2rem] font-semibold hover:border-stone hover:bg-stone hover:text-brand no-underline"
-              style={{ padding: '0.8rem 2.5rem 0.7rem', fontSize: '0.75rem', lineHeight: '2', transition: 'all 0.24s' }}
-            >
-              Get Your Quote Today
-            </a>
-
+            <p className="text-blue uppercase tracking-[0.15em] font-bold mb-4" style={{ fontSize: '0.85rem' }}>Get Covered</p>
+            <h2 className="text-stone font-bold leading-[1.3] tracking-tight mb-5" style={{ fontSize: 'clamp(2.2rem, 4vw, 2.6rem)' }}>Share a Few Details and Let&apos;s Find the Right Coverage</h2>
+            <p className="text-cream font-light mb-8" style={{ lineHeight: '22px', maxWidth: '500px' }}>Tell us about your pool or hot tub contracting operation and our specialists will reach out with tailored coverage options. No obligation — just expert guidance from a team that understands the aquatic contracting industry.</p>
+            <a href="https://alkemeins.com/form" className="inline-flex items-center justify-center border-2 border-gold bg-gold text-brand text-center uppercase tracking-[0.16em] rounded-[2rem] font-semibold hover:border-stone hover:bg-stone hover:text-brand no-underline" style={{ padding: '0.8rem 2.5rem 0.7rem', fontSize: '0.75rem', lineHeight: '2', transition: 'all 0.24s' }}>Get Your Quote Today</a>
             <div className="mt-10 space-y-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-gold rounded-full flex items-center justify-center shrink-0">
-                  <svg className="w-5 h-5 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
+                  <svg className="w-5 h-5 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                 </div>
                 <div>
                   <div className="text-stone font-bold" style={{ fontSize: '0.9rem' }}>Call Us</div>
                   <a href="tel:+18559255363" className="text-cream/70 no-underline hover:text-gold" style={{ fontSize: '0.85rem', transition: 'color 0.2s' }}>(855) 925-5363</a>
                 </div>
               </div>
-
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-gold rounded-full flex items-center justify-center shrink-0">
-                  <svg className="w-5 h-5 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                  </svg>
+                  <svg className="w-5 h-5 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
                 </div>
                 <div>
                   <div className="text-stone font-bold" style={{ fontSize: '0.9rem' }}>Email</div>
@@ -54,33 +34,14 @@ export default function QuoteForm() {
               </div>
             </div>
           </div>
-
-          {/* Right - Visual CTA card */}
           <div className="relative overflow-hidden rounded-[2rem]" style={{ minHeight: '400px' }}>
-            <img
-              src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80"
-              alt="Trucking insurance specialist helping owner-operators find coverage"
-              width={800}
-              height={600}
-              className="absolute inset-0 w-full h-full object-cover"
-              style={{ filter: 'grayscale(100%)' }}
-            />
+            <img src="https://images.unsplash.com/photo-1572331165267-854da2b021b1?auto=format&fit=crop&w=800&q=80" alt="Pool contractor insurance specialist helping businesses find coverage" width={800} height={600} className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'grayscale(100%)' }} />
             <div className="absolute inset-0 bg-brand" style={{ opacity: 0.7 }} />
             <div className="absolute inset-0 pointer-events-none" style={{ opacity: 0.08, backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`, backgroundRepeat: 'repeat', backgroundSize: '128px 128px' }} />
             <div className="relative h-full flex flex-col items-center justify-center text-center p-10" style={{ minHeight: '400px' }}>
-              <h3 className="text-stone font-bold mb-4" style={{ fontSize: '1.8rem', lineHeight: '1.3' }}>
-                Ready to Protect Your Fleet?
-              </h3>
-              <p className="text-cream/80 font-light mb-8 max-w-sm" style={{ fontSize: '0.95rem', lineHeight: '1.5' }}>
-                Our specialists understand trucking operations inside and out. Get coverage tailored to the way you run.
-              </p>
-              <a
-                href="https://alkemeins.com/form"
-                className="inline-flex items-center justify-center border-2 border-stone text-stone bg-transparent text-center uppercase tracking-[0.16em] rounded-[2rem] font-semibold hover:bg-stone hover:text-brand no-underline"
-                style={{ padding: '0.8rem 2rem 0.7rem', fontSize: '0.75rem', lineHeight: '2', transition: 'all 0.24s' }}
-              >
-                Start Your Quote
-              </a>
+              <h3 className="text-stone font-bold mb-4" style={{ fontSize: '1.8rem', lineHeight: '1.3' }}>Ready to Protect Your Pool Business?</h3>
+              <p className="text-cream/80 font-light mb-8 max-w-sm" style={{ fontSize: '0.95rem', lineHeight: '1.5' }}>Our specialists understand pool and hot tub contracting inside and out. Get coverage tailored to the way you build.</p>
+              <a href="https://alkemeins.com/form" className="inline-flex items-center justify-center border-2 border-stone text-stone bg-transparent text-center uppercase tracking-[0.16em] rounded-[2rem] font-semibold hover:bg-stone hover:text-brand no-underline" style={{ padding: '0.8rem 2rem 0.7rem', fontSize: '0.75rem', lineHeight: '2', transition: 'all 0.24s' }}>Start Your Quote</a>
             </div>
           </div>
         </div>
