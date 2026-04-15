@@ -94,7 +94,7 @@ export default function Header() {
               <Dropdown label="Industries" items={industryItems} isOpen={openDropdown === 'industries'} onToggle={() => setOpenDropdown(openDropdown === 'industries' ? null : 'industries')} onClose={() => setOpenDropdown(null)} />
               <Link href={isHome ? '#states' : '/#states'} className="text-brand hover:text-blue-dark uppercase tracking-[0.16em] px-4 py-2 font-bold no-underline" style={{ fontSize: '0.7rem', transition: 'all 0.2s' }}>States</Link>
               <Dropdown label="Resources" items={resourceItems} isOpen={openDropdown === 'resources'} onToggle={() => setOpenDropdown(openDropdown === 'resources' ? null : 'resources')} onClose={() => setOpenDropdown(null)} />
-              <a href="https://alkemeins.com/form" className="border-[1.5px] border-blue text-blue hover:border-gold hover:bg-gold hover:text-brand uppercase tracking-[0.16em] px-5 py-2 font-bold rounded-[20px] ml-3 no-underline" style={{ fontSize: '0.65rem', transition: 'all 0.24s' }}>Get Your Quote</a>
+              <button onClick={() => window.dispatchEvent(new Event('open-quote-modal'))} className="border-[1.5px] border-blue text-blue hover:border-gold hover:bg-gold hover:text-brand uppercase tracking-[0.16em] px-5 py-2 font-bold rounded-[20px] ml-3 no-underline cursor-pointer" style={{ fontSize: '0.65rem', transition: 'all 0.24s', background: 'transparent' }}>Get Your Quote</button>
             </nav>
             <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden p-2 flex flex-col items-center justify-center gap-[5px] w-10 h-10" aria-label="Toggle menu">
               <span className="block w-5 h-[2px] bg-brand origin-center" style={{ transition: 'all 0.5s', transform: mobileOpen ? 'translateY(7px) rotate(45deg)' : 'none' }} />
@@ -117,7 +117,7 @@ export default function Header() {
               <Link href={isHome ? '#states' : '/#states'} onClick={() => setMobileOpen(false)} className="block text-brand hover:text-blue-dark uppercase tracking-[0.16em] font-bold py-2 no-underline" style={{ fontSize: '0.75rem' }}>States & Cities</Link>
               <a href="https://alkemeins.com" onClick={() => setMobileOpen(false)} className="block text-blue-dark hover:text-brand uppercase tracking-[0.12em] font-bold py-2 no-underline" style={{ fontSize: '0.65rem' }}>Back to ALKEME</a>
             </div>
-            <a href="https://alkemeins.com/form" className="inline-block border-2 border-gold bg-gold text-brand uppercase tracking-[0.16em] px-6 py-3 font-bold rounded-[20px] mt-4 no-underline text-center w-full" style={{ fontSize: '0.75rem', transition: 'all 0.24s' }}>Get Your Quote</a>
+            <button onClick={() => { setMobileOpen(false); window.dispatchEvent(new Event('open-quote-modal')); }} className="inline-block border-2 border-gold bg-gold text-brand uppercase tracking-[0.16em] px-6 py-3 font-bold rounded-[20px] mt-4 no-underline text-center w-full cursor-pointer" style={{ fontSize: '0.75rem', transition: 'all 0.24s' }}>Get Your Quote</button>
           </div>
         </div>
       </header>
