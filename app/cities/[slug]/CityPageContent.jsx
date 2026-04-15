@@ -109,7 +109,7 @@ export default function CityPageContent({ city }) {
             <div>
               <h3 className="text-gold font-bold uppercase tracking-[0.12em] mb-4" style={{ fontSize: '0.8rem' }}>Industries We Serve</h3>
               <div className="space-y-2">
-                {['owner-operators', 'small-fleets', 'large-fleets', 'pool-remodeling', 'commercial-pools'].map(slug => (
+                {['pool-builders', 'hot-tub-installers', 'pool-service-maintenance', 'pool-remodeling', 'commercial-pools'].map(slug => (
                   <Link key={slug} href={`/industries/${slug}/`} className="block text-cream hover:text-gold no-underline" style={{ fontSize: '0.85rem', transition: 'color 0.2s' }}>
                     {slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
                   </Link>

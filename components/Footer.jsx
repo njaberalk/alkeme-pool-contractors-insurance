@@ -1,12 +1,13 @@
 import Link from 'next/link';
 
-const alkemeLinks = [
+const moreInsuranceLinks = [
+  { label: 'Construction Insurance', href: 'https://alkemeins.com/construction' },
+  { label: 'Architecture Insurance', href: 'https://alkemeins.com/architecture' },
   { label: 'Business Insurance', href: 'https://alkemeins.com/business-insurance' },
-  { label: 'Personal Insurance', href: 'https://alkemeins.com/personal-insurance' },
+  { label: 'Habitational Insurance', href: 'https://alkemeins.com/habitational' },
   { label: 'Employee Benefits', href: 'https://alkemeins.com/employee-benefits' },
-  { label: 'Financial Services', href: 'https://alkemeins.com/financial-services' },
-  { label: 'About ALKEME', href: 'https://alkemeins.com/about' },
-  { label: 'Contact Us', href: 'https://alkemeins.com/contact' },
+  { label: 'Hospitality Insurance', href: 'https://alkemeins.com/hospitality' },
+  { label: 'Automotive Insurance', href: 'https://alkemeins.com/automotive' },
 ];
 
 const coverageLinks = [
@@ -52,9 +53,9 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h4 className="text-brand font-bold mb-5 text-right max-lg:text-left" style={{ fontSize: '1rem' }}>ALKEME</h4>
+            <h4 className="text-brand font-bold mb-5 text-right max-lg:text-left" style={{ fontSize: '1rem' }}>More Insurance</h4>
             <ul className="space-y-3 list-none p-0 m-0">
-              {alkemeLinks.map((link) => (<li key={link.label} className="text-right max-lg:text-left"><a href={link.href} className="text-brand hover:text-blue-dark no-underline" style={{ fontSize: '0.9rem', lineHeight: '1.5', transition: 'all 0.2s' }}>{link.label}</a></li>))}
+              {moreInsuranceLinks.map((link) => (<li key={link.label} className="text-right max-lg:text-left"><a href={link.href} className="text-brand hover:text-blue-dark no-underline" style={{ fontSize: '0.9rem', lineHeight: '1.5', transition: 'all 0.2s' }}>{link.label}</a></li>))}
             </ul>
           </div>
           <div>
@@ -78,7 +79,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-ash">
-        <div className="max-w-[68rem] mx-auto px-[60px] max-lg:px-6 max-md:px-4 py-6">
+        <div className="max-w-[68rem] mx-auto px-[60px] max-lg:px-6 max-md:px-4 py-6 pb-20">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-brand/50 text-center" style={{ fontSize: '0.85rem', lineHeight: '1.5' }}>&copy; {new Date().getFullYear()} ALKEME Insurance Services. All rights reserved.</p>
             <div className="flex items-center gap-6">

@@ -34,6 +34,7 @@ export default async function StatePage({ params }) {
       <meta property="article:modified_time" content="2026-04-01T00:00:00Z" />
       {jsonLd.map((ld, i) => (<script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />))}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: state.name, datePublished: '2025-06-01', dateModified: '2026-04-01', author: { '@type': 'Organization', name: 'ALKEME Insurance Services', url: 'https://alkemeins.com' }, publisher: { '@type': 'Organization', name: 'ALKEME Insurance Services', url: 'https://alkemeins.com' } }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'LocalBusiness', '@id': `https://alkemeins.com/pool-contractors/states/${state.slug}/`, name: 'ALKEME Insurance Services', url: 'https://alkemeins.com', telephone: '+18559255363', email: 'info@alkemeins.com', areaServed: { '@type': 'State', name: state.name }, priceRange: '$$' }) }} />
       <StatePageContent state={state} />
     </>
   );
