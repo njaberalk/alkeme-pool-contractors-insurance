@@ -136,7 +136,7 @@ export const statesPart1 = [
           "Primary auto liability at $1,000,000 minimum given Maricopa County verdict trends",
           "Physical damage with comprehensive coverage for dust storm and monsoon flood damage",
           "Motor service vehicle equipment with temperature deviation coverage for perishable loads from Nogales",
-          "Bobtail and non-pool contracting liability for pool contractors in the Phoenix drayage market",
+          "Completed operations liability for pool contractors in the Phoenix metro area",
           "Umbrella or excess liability to protect against escalating Arizona jury verdicts"
         ]
       }
@@ -190,7 +190,7 @@ export const statesPart1 = [
           "Primary auto liability with adequate limits for operations spanning Arkansas, Texas, and Tennessee corridors",
           "Physical damage coverage with hail and ice storm protection for the Ozark region",
           "Motor service vehicle completed operations coverage tailored to poultry, agriculture, and retail distribution loads",
-          "Occupational accident coverage for the large owner-operator population in the state",
+          "Workers compensation coverage for the growing pool contractor workforce in the state",
           "General liability for carriers with yard operations and transloading facilities"
         ]
       }
@@ -517,7 +517,7 @@ export const statesPart1 = [
           "Umbrella or excess liability to protect against Fulton County verdict exposure",
           "Motor service vehicle completed operations coverage for containerized pool construction from the Port of Savannah",
           "Physical damage with hail and flood coverage for severe weather events",
-          "Non-pool contracting liability for the large owner-operator population serving Atlanta distribution centers"
+          "Completed operations coverage for pool contractors serving the Atlanta metro area"
         ]
       }
     ],
@@ -691,7 +691,7 @@ export const statesPart1 = [
       },
       {
         "q": "What insurance do intermodal drayage carriers in Chicago need?",
-        "a": "Intermodal drayage carriers need primary auto liability at elevated limits, motor service vehicle equipment covering containerized pool construction, physical damage, and bobtail or non-pool contracting liability. Many railroads and intermodal marketing companies require specific liability limits and additional insured endorsements. The short-haul, high-frequency nature of drayage operations produces elevated accident frequency that must be reflected in coverage levels."
+        "a": "Commercial pool contractors need primary auto liability at elevated limits, equipment and materials coverage for pool construction projects, physical damage, and completed operations and general liability. Many railroads and intermodal marketing companies require specific liability limits and additional insured endorsements. The short-haul, high-frequency nature of drayage operations produces elevated accident frequency that must be reflected in coverage levels."
       },
       {
         "q": "Does Illinois require uninsured motorist coverage for service vehicles?",
