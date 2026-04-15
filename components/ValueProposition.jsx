@@ -2,9 +2,9 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const cards = [
-  { title: 'Pool & Aquatic Industry Expertise', description: 'Deep understanding of the risks facing pool builders, service companies, and hot tub installers. Our specialists know drowning liability, completed operations exposure, and chemical handling requirements unique to aquatic contractors.', image: 'https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?auto=format&fit=crop&w=600&q=80' },
-  { title: 'Tailored Coverage Programs', description: 'No two pool contractors face the same risks. We design coverage programs that align with your project types, service territory, subcontractor use, and client base — not a generic contractor policy.', image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80' },
-  { title: 'Responsive Service & Claims Support', description: 'When a claim occurs on a pool job site, every hour matters. Our team provides direct access to experienced claims advocates who understand pool contractor challenges and act quickly on your behalf.', image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80' },
+  { title: 'Pool & Aquatic Industry Expertise', description: 'Deep understanding of the risks facing pool builders, service companies, and hot tub installers. Our specialists know drowning liability, completed operations exposure, and chemical handling requirements unique to aquatic contractors.', image: 'https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=600&q=80' },
+  { title: 'Tailored Coverage Programs', description: 'No two pool contractors face the same risks. We design coverage programs that align with your project types, service territory, subcontractor use, and client base — not a generic contractor policy.', image: 'https://images.unsplash.com/photo-1572331165267-854da2b021b1?auto=format&fit=crop&w=600&q=80' },
+  { title: 'Responsive Service & Claims Support', description: 'When a claim occurs on a pool job site, every hour matters. Our team provides direct access to experienced claims advocates who understand pool contractor challenges and act quickly on your behalf.', image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80' },
 ];
 
 export default function ValueProposition() {

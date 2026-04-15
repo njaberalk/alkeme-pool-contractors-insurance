@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1572331165267-854da2b021b1?auto=format&fit=crop&w=1920&q=80"
+          src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1920&q=80"
           alt="Swimming pool construction site for pool contractor insurance"
           width={1920}
           height={1080}
