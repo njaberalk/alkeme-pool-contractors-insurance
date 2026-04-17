@@ -14,10 +14,10 @@ const poppins = Poppins({
 export const metadata = {
   metadataBase: new URL('https://alkemeins.com/pool-contractors'),
   title: {
-    template: '%s | ALKEME Insurance Services',
-    default: 'Pool & Hot Tub Contractor Insurance | ALKEME Insurance Services',
+    template: '%s | ALKEME',
+    default: 'Pool & Hot Tub Contractor Insurance | ALKEME',
   },
-  description: 'ALKEME Insurance Services provides specialized insurance for pool builders, hot tub installers, pool service companies, and aquatic contractors. Coverage for general liability, completed operations, pollution liability, and more.',
+  description: 'Specialized insurance from ALKEME for pool builders, hot tub installers, and pool service companies — GL, completed operations, pollution liability, and more.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -33,7 +33,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pool & Hot Tub Contractor Insurance | ALKEME Insurance Services',
+    title: 'Pool & Hot Tub Contractor Insurance | ALKEME',
     description: 'Specialized insurance for pool builders, hot tub installers, and aquatic contractors across all 50 states.',
     images: ['https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&h=630&q=80'],
   },
